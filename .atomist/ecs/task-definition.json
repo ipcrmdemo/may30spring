@@ -1,1 +1,104 @@
-{}
+{
+  "ipcMode": null,
+  "executionRoleArn": null,
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": null,
+      "logConfiguration": null,
+      "entryPoint": null,
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "containerPort": 8080
+        }
+      ],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 256,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": 512,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "registry.hub.docker.com/ipcrm/may30spring:0.1.0-SNAPSHOT-master.20190530203955",
+      "startTimeout": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": {
+        "retries": 3,
+        "command": [
+          "CMD-SHELL",
+          "echo hi || exit 1"
+        ],
+        "timeout": 5,
+        "interval": 30,
+        "startPeriod": 30
+      },
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "may30spring"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": "512",
+  "taskRoleArn": null,
+  "compatibilities": [
+    "EC2",
+    "FARGATE"
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:247672886355:task-definition/may30spring:10",
+  "family": "may30spring",
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.task-eni"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.container-health-check"
+    }
+  ],
+  "pidMode": null,
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "revision": 10,
+  "status": "ACTIVE",
+  "proxyConfiguration": null,
+  "volumes": []
+}
