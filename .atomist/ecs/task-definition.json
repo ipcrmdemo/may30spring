@@ -25,10 +25,6 @@
     }
   ],
   "memory": "512",
-  "compatibilities": [
-    "EC2"
-  ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:247672886355:task-definition/may30spring:10",
   "family": "may30spring",
   "requiresCompatibilities": [
     "EC2"
